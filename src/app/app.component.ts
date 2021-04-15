@@ -89,7 +89,7 @@ export class AppComponent {
       buttons: [
         {
           text: "ok",
-          role: "canc",
+          role: "cancel",
           handler: async () => {
             await this._updates.activateUpdate();
             window.location.reload();
