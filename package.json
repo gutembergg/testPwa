@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "deploy:github": "ng deploy --base-href=./",
-    "deploy:githubCI": "ng deploy --base-href=./ --repo=https://github.com/gutembergg/testPwa.git --name=Gutembergue Mascarenhas --email=gmascarenhas3001@gmail.com --no-silent",
+    "deploy:githubCI": "ng deploy --base-href=./ --repo=https://github.com/gutembergg/testPwa.git --name='Gutembergue Mascarenhas' --email=gmascarenhas3001@gmail.com --no-silent",
     "deploy:ftp": "ng build --prod --base-href=/~mascarenhas/testpwa/ && node deploy",
     "test": "ng test",
     "lint": "ng lint",
