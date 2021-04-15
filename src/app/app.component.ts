@@ -49,7 +49,7 @@ export class AppComponent {
     this._updates.available.subscribe((res) => {
       console.log("--->", res);
       if (res) {
-        this.showToast();
+        this.displayPopUpUpdate();
       }
     });
   }
@@ -81,6 +81,26 @@ export class AppComponent {
 
     /*  const { role } = await toast.onDidDismiss();
     console.log("onDidDismiss resolved with role", role); */
+  }
+
+  async displayPopUpUpdate() {
+    const toast = await this._toastCtr.create({
+      message: `Update available`,
+      position: "bottom",
+      keyboardClose: true,
+      color: "dark",
+      buttons: [
+        {
+          text: "ok",
+          role: "cancel",
+          handler: async () => {
+            await this._updates.activateUpdate();
+            window.location.reload();
+          }
+        }
+      ]
+    });
+    await toast.present();
   }
 
   activateUpdate() {
