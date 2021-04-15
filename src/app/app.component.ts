@@ -79,8 +79,6 @@ export class AppComponent {
     });
     await toast.present();
 
-    /*  "deploy:github": "ng deploy --base-href=./", */
-
     /*  const { role } = await toast.onDidDismiss();
     console.log("onDidDismiss resolved with role", role); */
   }
