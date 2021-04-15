@@ -27,4 +27,4 @@ jobs:
         env:
           CI: true
           # Deploy env
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: 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
