@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+
+# github, ftp deploy.
+/deploy.js
 # Only exists if Bazel was run
 /bazel-out
 
