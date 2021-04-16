@@ -29,3 +29,4 @@ jobs:
           CI: true
           # Deploy env
           # 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
+          GITHUB_TOKEN: ${{ secrets.GH_TEST }}
