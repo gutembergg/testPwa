@@ -22,7 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       # - run: npm test
-      - run: echo result ${{ secrets.GH_TOKEN }};
 
       - run: npm run deploy:githubCI --if-present
 
@@ -30,4 +29,3 @@ jobs:
           CI: true
           # Deploy env
           # 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
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
